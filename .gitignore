@@ -111,3 +111,5 @@ package-lock.json
 errorShots/*
 views/*.ejs
 !.gitkeep # this should always be last
+
+.next

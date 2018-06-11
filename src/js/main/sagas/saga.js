@@ -12,7 +12,7 @@ es6promise.polyfill();
 function* loadDataSaga() {
     try {
         const res = yield fetch('http://localhost:3000/api/v2/dashboard');
-        yield delay(10000);
+        yield delay(2000);
         const data = yield res.json();
         yield put(loadDataSuccess(data));
     } catch (err) {
