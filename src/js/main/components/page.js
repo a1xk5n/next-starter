@@ -37,4 +37,4 @@ Page.defaultProps = {
     placeholderData: null,
 };
 
-export default connect(state => state)(Page);
+export default connect(state => state.main)(Page);

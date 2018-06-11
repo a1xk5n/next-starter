@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Page from '../../src/js/main/components/page';
-import Header from '../../src/js/main/components/header';
+import Page from '../src/js/main/components/page';
+import Header from '../src/js/main/components/header';
 
 class Other extends React.PureComponent {
     static async getInitialProps(props) {
