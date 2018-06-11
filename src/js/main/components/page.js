@@ -5,10 +5,12 @@ import { connect } from 'react-redux';
 
 import Counter from './counter';
 
+import './page.scss';
+
 const Page = ({
- linkTo, NavigateTo, placeholderData, title 
+    linkTo, NavigateTo, placeholderData, title,
 }) => (
-    <div>
+    <div className="page">
         <h1>{title}</h1>
         <Counter />
         <nav>

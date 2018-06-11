@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Page from '../src/js/main/components/page';
-import Header from '../src/js/main/components/Header';
+import Page from '../../src/js/main/components/page';
+import Header from '../../src/js/main/components/header';
 
 class Other extends React.PureComponent {
     static async getInitialProps(props) {
@@ -14,7 +14,7 @@ class Other extends React.PureComponent {
         return (
             <React.Fragment>
                 <Header />
-                <Page title="Other Page" linkTo="/" NavigateTo="Index Page" />
+                <Page title="Other Page" linkTo="/dashboard" NavigateTo="Index Page" />
             </React.Fragment>
         );
     }

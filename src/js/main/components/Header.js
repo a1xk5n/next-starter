@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import NProgress from 'nprogress';
 import Router from 'next/router';
+import NProgress from 'nprogress';
 
 Router.onRouteChangeStart = () => {
     NProgress.start();

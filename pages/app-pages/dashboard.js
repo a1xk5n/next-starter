@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { loadData } from '../src/js/main/actions/actions';
-import Page from '../src/js/main/components/page';
-import Header from '../src/js/main/components/Header';
+import { loadData } from '../../src/js/main/actions/actions';
+import Page from '../../src/js/main/components/page';
+import Header from '../../src/js/main/components/header';
 
 class Index extends React.PureComponent {
     static async getInitialProps(props) {
         const { store, isServer } = props.ctx;
-
         store.dispatch(loadData());
 
         return { isServer };

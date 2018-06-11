@@ -25,7 +25,7 @@ const Counter = ({
 );
 
 Counter.propTypes = {
-    count: PropTypes.func.isRequired,
+    count: PropTypes.number.isRequired,
     increment: PropTypes.func.isRequired,
     decrement: PropTypes.func.isRequired,
     reset: PropTypes.func.isRequired,
