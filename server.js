@@ -1,10 +1,12 @@
 const express = require('express');
 const next = require('next');
 const proxy = require('http-proxy-middleware');
+
 const routes = require('./routes');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
+
 const app = next({ dev });
 const handle = routes.getRequestHandler(app);
 

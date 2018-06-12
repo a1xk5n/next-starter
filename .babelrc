@@ -9,5 +9,13 @@
     "production": {
       "plugins": ["transform-inline-environment-variables"]
     }
-  }
+  },
+   "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src/js"]
+      }
+    ]
+  ]
 }

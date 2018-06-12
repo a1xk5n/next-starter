@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { loadData } from '../src/js/main/actions/actions';
-import Page from '../src/js/main/components/page';
-import Header from '../src/js/main/components/header';
+import { loadData } from 'main/actions/actions';
+import Page from 'main/components/page';
+import Header from 'main/components/header';
 
 class Index extends React.PureComponent {
     static async getInitialProps(props) {
@@ -17,7 +17,7 @@ class Index extends React.PureComponent {
         return (
             <React.Fragment>
                 <Header />
-                <Page title={`${process.env.TEST}1111`} linkTo="/other" NavigateTo="Other Page" />
+                <Page title={`${process.env.TEST}1111`} />
             </React.Fragment>
         );
     }
